@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+  }
+
+    body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;  
+}
+
+#myvideo{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.chat-container {
+  position: fixed;
+  width: 300px;
+  padding: 20px;
+  border: #0d0606 solid 1px;
+  margin-left: 500px;
+  margin-top: 100px;
+  border-radius: 30px 70px 30px 30px;
+  backdrop-filter: blur(60px);
+  background-color: rgba(206,203, 203, 0.5);
+}
+
+.chat-box {
+  height: 200px;
+  overflow-y: auto;
+  border: 1px solid #0d0606;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 7px;
+}
+
+#user-input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+.varam {
+  font-size: 35px;
+  text-align: center;
+  background: linear-gradient(80deg, green, blue);
+  background-clip: text;
+  color:transparent;
+  text-shadow: tomato  2px -3px;
+  font: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding-bottom: 5px;
+  padding-top: 3px;
+  margin: 0%; 
+}

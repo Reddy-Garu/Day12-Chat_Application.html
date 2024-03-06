@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chat Application</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="./Day12-Chat Application.css">
+</head>
+<body >
+  <div class="background">
+  <video autoplay muted loop id="myvideo">
+    <source src="./WhatsApp Video 2024-03-06 at 10.40.35_495084be.mp4" type="video/mp4">
+  </video>
+  <div class="chat-container">
+    <div class="varam">Chat Application</div>
+    <div class="chat-box" id="chat-box"></div>
+    <input type="text" id="user-input" placeholder="Type a message...">
+    <button onmouseenter="sendMessage()">Send</button>
+  </div>
+  </div>
+  <script>
+    function sendMessage() {
+    var userInput = document.getElementById("user-input");
+    var message = userInput.value;
+  
+    if (message.trim() === "") {
+      alert("Please enter a message.");
+      return;
+    }
+  
+    var chatBox = document.getElementById("chat-box");
+    var newMessage = document.createElement("div");
+    newMessage.textContent = message;
+    chatBox.appendChild(newMessage);
+  
+    userInput.value = "";
+    chatBox.scrollTop = chatBox.scrollHeight;
+  }
+  </script>
+
+</body>
+</html>
